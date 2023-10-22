@@ -1,0 +1,154 @@
+header{
+    .header-container{
+        background-image: url(https://preview.colorlib.com/theme/jobboard2/img/banner/banner.png.webp);
+        height: 700px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        .nav-box{
+            max-width: 2200px;
+            margin: auto;
+            height: 80px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-menu{
+                ul{
+                    li{
+                        display: inline;
+                        margin: 0 25px;
+                        a{
+                            @include font(15px,500,#fff);
+                            padding: 35px 0;
+                            i{
+                                font-size: 10px;
+                            }
+                        }
+                        &:hover{
+                            cursor: pointer;
+                            a{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-appointment{
+                .nav-log{
+                    display: inline-block;
+                    padding: 15px 30px;
+                    a{
+                        @include font(14px,400,#fff);
+                    }
+
+                }
+                .nav-job{
+                    display: inline-block;
+                    background-color: $green;
+                    border: 1px solid $green;
+                    border-radius: 5px;
+                    padding: 15px 30px;
+                    transition: 300ms;
+                    a{
+                        @include font(16px,500,#fff);
+                        text-wrap: nowrap;
+                        transition: 300ms;
+                    }
+                    &:hover{
+                        background-color:transparent;
+                        cursor: pointer;
+                        a{
+                            color: $green;
+                        }
+                    }
+                }
+            }
+            .second-menu{
+                display: none;
+                background-color: $green;
+                border: 1px solid $green;
+                border-radius: 5px;
+                padding: 15px 30px;
+                transition: 300ms;
+                a{
+                    @include font(16px,500,#fff);
+                    text-wrap: nowrap;
+                    transition: 300ms;
+                }
+            }
+            @media only screen and (max-width: 1100px) {
+                .nav-menu{
+                    display: none;
+                }
+                .nav-appointment{
+                    display: none;
+                }
+                .second-menu{
+                    display: inline-block;
+                }
+            }
+        }
+        .header-box{
+            width: 90%;
+            background-image: url(https://preview.colorlib.com/theme/jobboard2/img/banner/illustration.png.webp);
+            height: 620px;
+            background-size: 40% 80%;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            .flex-box{
+                width: 1200px;
+                margin: auto;
+                padding: 0 20px;
+                .header-text{
+                    h5{
+                        @include font(30px,400,#fff);
+                        margin-bottom: 8px;
+                    }
+                    h3{
+                        @include font(56px,500,#fff);
+                        margin-bottom: 8px;
+                    }
+                    p{
+                        @include font(16px,400,#fff);
+                        margin-bottom: 35px;
+                    }
+                    .header-btn{
+                        display: inline-block;
+                        background-color: $green;
+                        border: 1px solid $green;
+                        border-radius: 5px;
+                        padding: 15px 30px;
+                        transition: 300ms;
+                        a{
+                            @include font(16px,500,#fff);
+                            transition: 300px;
+                        }
+                        &:hover{
+                            background-color:transparent;
+                            cursor: pointer;
+                            a{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        @media only screen and (max-width: 1400px) {
+            .header-box{
+                background-size: 40% 60%;
+            }
+        }
+        @media only screen and (max-width: 1400px) {
+            .header-box{
+                
+                background-image: none;
+            }
+        }
+    }
+}
